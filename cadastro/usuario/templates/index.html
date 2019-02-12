@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+{% if request.user.is_authenticated %}
+ {{request.user.username}}
+
+{% else %}
+        <p>Referencia de registro</p>
+ {% endif %}
+
+<div class="jumbotron text-center">
+<h3>@jfc_me</h3>
+
+</div>
+
+
+{% endblock body %}
+
